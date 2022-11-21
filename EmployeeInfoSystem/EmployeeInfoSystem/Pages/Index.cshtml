@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<center> <h1> Account Sign up Form </h1> </center>
+<form>
+    <div class="formContainer">
+        <h1>Sign Up Form</h1>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <label for="repeatPassword"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="repeatPassword"
+               required>
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="marginbottom: 15px"> Remember me
+        </label>
+            <div>
+                <button type="button" class="cancel">Cancel</button>
+                <button type="submit" class="signup">Sign Up</button>
+            </div>
+    </div>
+</form>
